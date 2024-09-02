@@ -3,9 +3,8 @@ import sys
 
 def factorial(n):
     result = 1
-    while n > 1:
-        result *= n
-        n -= 1  # Add this line to decrement n
+    for i in range(1, n + 1):
+        result *= i
     return result
 
 if len(sys.argv) != 2:
